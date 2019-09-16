@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>【レスポンシブ練習1】</title>
+    <link rel="stylesheet" href="new.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            border-bottom:1px solid black ;
+            padding: 10px;
+            width: 100%;
+        }
+        header p{
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer{
+            border-top: 1px solid black;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100vw;
+            background-color: white;
+        }
+        footer p{
+            text-align: center;
+        }
+        main .container{
+            border-top: none;
+            border-bottom: none;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;
+        }
+        .con{
+            box-sizing:border-box;
+            width:50%;
+            border:1px solid red;
+            float:left;
+            min-height: 300px;
+            margin: 0;
+        }
+        @media (min-width: 700px) {
+            main .container{
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>計画通りさんの宿題　作者：okimai</p>
+    </header>
+    <main>
+        <section class="container">
+            <p class="con">A </p>
+            <p class="con">B</p>
+            <p class="con">C</p>
+            <p class="con">D</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>©雛桜日本語サークル</p>
+    </footer>
+</body>
+</html>
